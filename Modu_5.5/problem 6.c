@@ -3,33 +3,19 @@ int main()
 {
     int n,m;
     scanf("%d %d",&n,&m);
-    for ( int i = n; i <= m; i++)
+    while (n != m)
     {
+        printf("%d ",n);
+        n++;
+        if(n == 24)
         {
-            printf("%d ",i);
-            
-        }   
+            n = 0;
+        }
+        if (n == m)
+        {
+             printf("%d ",n);
+        }
         
     }
-            
-    for ( int i = n; i >= m; i++)
-    {
-        {
-            printf("%d ",i);
-            if (i == 23)
-            {
-                break;
-            }
-            
-            
-        }   
-    }
-    for ( int i = 0; i <= m; i++)
-    {
-       printf("%d ",i);
-    }
-    
-    
-    
     return 0;
 }
