@@ -1,37 +1,19 @@
 #include<stdio.h>
-int main()
+int main() 
 {
-    int a,i,n;
-    scanf("%d",&a);
-    scanf("%d",&n);
+   long long n,k,j,i; 
+   scanf("%lld%lld",&n,&k); 
+   if(n%2==0) 
+      j=n/2; 
+   else 
+      j=n/2+1; 
+   if(k<=j) 
+      i=(k*2)-1; 
+   else 
+      i=(k-j)*2; 
 
-    for (i = 1; i <= a; i++)
-    {
-       if (i % 2 != 0)
-       {
-          printf("%d ",i);
-       }
-     
-    }
-
-    for (i = 1; i <= a; i++)
-    {
-       if (i % 2 == 0)
-       {
-          printf("%d ",i);
-       }
-     
-    }
-    //  for (i = 1; i <= n; i++)
-    // {
-    //       printf("%d ",n);
-       
-     
-    // }
-
-    
-    
+   printf("%lld\n",i); 
    
-    
-    return 0;
+   return 0;
+   
 }
