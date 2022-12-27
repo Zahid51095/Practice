@@ -1,25 +1,32 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int a,i,x;
-    scanf("%d",&a);
-    for ( i = 1; i <= a; i++)
+    int n, i;
+    int ara[100];
+    scanf("%d", &n);
+    for (i = 0; i < n; i++)
     {
-        scanf("%d",&x);
-        if (x == 0)
-        {
-            printf("EASY");
-            return 0;
-        }
-        else if (x == 1)
-        {
-            printf("Hard");
-            return 0;
-        }
-        
-        
-        
+        scanf("%d", &ara[i]);
     }
-    
+
+    int flag = 1;
+
+    for (int i = 0; i < n; i++)
+    {
+        if (ara[i] == 1)
+        {
+            flag = 0;
+        }
+    }
+
+    if (flag == 1)
+    {
+        printf("EASY\n");
+    }
+    else
+    {
+        printf("HARD");
+    }
+
     return 0;
 }
