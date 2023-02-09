@@ -1,37 +1,22 @@
 #include <stdio.h>
 #include <string.h>
-
-void reverse(char str[], int length) {
-    int start = 0;
-    int end = length -1;
-    while (start < end) {
-        char temp = str[start];
-        str[start] = str[end];
-        str[end] = temp;
-        start++;
-        end--;
-    }
-}
-
-char* decode(int num) {
-    static char str[6];
-    int i = 0;
-    while (num > 0) {
-        str[i++] = (num % 10) + 'A' - 1;
-        num = num / 10;
-    }
-    str[i] = '\0';
-    reverse(str, strlen(str));
-    return str;
-}
+#include <stdlib.h>
 
 int main() {
-    int t;
-    scanf("%d", &t);
-    for (int i = 0; i < t; i++) {
-        int num;
-        scanf("%d", &num);
-        printf("%s\n", decode(num));
+  int t, n, i, j, len;
+  char str[100];
+  scanf("%d", &t);
+
+  while (t--) {
+    scanf("%d", &n);
+    sprintf(str, "%d", n);
+    len = strlen(str);
+
+    for (i = len - 1; i >= 0; i--) {
+      printf("%c", str[i] - '0' + 'A' - 1);
     }
-    return 0;
+    printf("\n");
+  }
+
+  return 0;
 }
