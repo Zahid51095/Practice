@@ -5,13 +5,13 @@ void string_descending(char str[100]);
  
 int main()
 {
-    char inputStr[100];
+    char Strn[100];
   
-    gets(inputStr);
+    gets(Strn);
 
-    string_descending(inputStr);
+    string_descending(Strn);
  
-    printf("%s", inputStr);
+    printf("%s", Strn);
     return 0;
 }
 

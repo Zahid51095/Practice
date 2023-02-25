@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int sum_of_indices_and_values(int n, int arr[])
+int total_sum(int n, int arr[])
 {
     int i, sum = 0;
     for (i = 1; i <= n; i++)
@@ -21,7 +21,7 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
-    int result = sum_of_indices_and_values(n, arr);
+    int result = total_sum(n, arr);
     printf("%d", result);
     return 0;
 }

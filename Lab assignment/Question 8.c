@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 
-void implement_worn_out_keyboard(char str[])
+void nosto_keyboard(char str[])
 {
     int i, j, len = strlen(str);
     for(i=0, j=0; i<len; i++, j++)
@@ -21,6 +21,6 @@ int main()
 {
     char str[100];
     scanf("%s", str);
-    implement_worn_out_keyboard(str);
+    nosto_keyboard(str);
     return 0;
 }

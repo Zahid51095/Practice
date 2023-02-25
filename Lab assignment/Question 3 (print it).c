@@ -2,16 +2,16 @@
 
 int main()
 {
-    int x,y;
+    int x,y, *ptrX, *ptrY;
+
     scanf("%d %d", &x, &y);
 
-    int* X;
-    int* Y;
+    
 
-    X = &x;
-    Y = &y;
+    ptrX = &x;
+    ptrY = &y;
 
-    printf("%d %d\n",*X,*Y); 
+    printf("%d %d\n",*ptrX, *ptrY); 
 
     return 0;
 }
